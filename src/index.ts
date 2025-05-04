@@ -4,7 +4,7 @@ import { MetarResponse } from "./types/metar";
 import { serializeMetar } from "./serialize/metar";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
-const AVIATION_WEATHER_BASE = "https://aviationweather.gov/data/api";
+const AVIATION_WEATHER_BASE = "https://aviationweather.gov/api/data";
 const USER_AGENT = "flymcp/1.0";
 
 const server = new McpServer({
