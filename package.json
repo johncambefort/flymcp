@@ -11,14 +11,14 @@
     "url": "git+https://github.com/johncambefort/flymcp.git"
   },
   "bin": {
-    "flymcp": "./build/src.js"
+    "flymcp": "./dist/src.js"
   },
   "scripts": {
-    "build": "esbuild ./src/ --outdir=build --platform=node --target=node23.11.0",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --format=esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "bugs": {
     "url": "https://github.com/johncambefort/flymcp/issues"
